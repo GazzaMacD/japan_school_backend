@@ -1,0 +1,8 @@
+jsbk_venv/
+project_files/
+settings/
+
+# vim files
+*.swp
+*.swo
+
