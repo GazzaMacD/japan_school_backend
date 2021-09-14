@@ -1,8 +1,23 @@
+# Project specific
 jsbk_venv/
 project_files/
 settings/
+settings.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
 
 # vim files
 *.swp
 *.swo
 
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
