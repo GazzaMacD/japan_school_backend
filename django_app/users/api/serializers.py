@@ -29,12 +29,12 @@ class CustomUserSerializer(serializers.ModelSerializer):
         return super().__new__(cls, *args, **kwargs)
 
     def to_representation(self, instance):
-        ret = super().to_representation(instance)
+        repDict = super().to_representation(instance)
         if not self.context.get("has_many", False):
             choices = {
                 "choices": json.dumps(
                     {f"{key}": f"{val}" for (key, val) in CustomUser.Role.choices}
                 )
             }
-            ret.update(choices)
-        return ret
+            repDict.update(choices)
+        return repDict
