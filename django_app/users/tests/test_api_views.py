@@ -17,5 +17,5 @@ class CustomUserListTest(APITestCase):
         url = reverse('users:api_user_list')
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response.data), 1)
+        self.assertEqual(len(response.data),1)
         self.assertEqual(response.data[0]['email'], self.EMAIL)
