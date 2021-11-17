@@ -20,6 +20,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
             "is_active",
             "date_joined",
         ]
+        read_only_fields = ("uuid", "date_joined", "role_display")
 
     def __new__(cls, *args, **kwargs):
         if kwargs.get("many", False) is True:
