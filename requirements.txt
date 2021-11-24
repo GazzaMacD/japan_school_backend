@@ -5,6 +5,7 @@ black==21.10b0
 click==8.0.3
 dj-rest-auth==2.1.11
 Django==3.2.7
+django-cors-headers==3.10.0
 djangorestframework==3.12.4
 djangorestframework-simplejwt==5.0.0
 flake8==4.0.1
